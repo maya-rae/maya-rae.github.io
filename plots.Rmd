@@ -1,0 +1,102 @@
+---
+title: "Maya Arnott"
+output: html_document
+---
+
+
+
+```{r setup, include = FALSE}
+library(tidyverse) 
+library(plotly)
+library(p8105.datasets)
+library(flexdashboard)
+```
+
+```{r, include = FALSE}
+data("rest_inspec")
+
+rest_inspec = 
+  rest_inspec |> 
+  mutate(
+      is_american = grepl("American", cuisine_description, ignore.case = TRUE)) |> 
+  filter(is_american) 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+## Chart A
+```{r, echo=FALSE}
+nyc_clean <- rest_inspec |> 
+  filter(!is.na(grade), !is.na(latitude), !is.na(longitude))
+
+plot_ly(
+  data = nyc_clean,
+  lat = ~latitude,
+  lon = ~longitude,
+  color = ~grade,
+  type = "scattermapbox",
+  text = ~paste("<b>", dba, "</b><br>Grade:", grade),
+  mode = "markers",
+  marker = list(size = 5, opacity = 0.6)
+) |> 
+  layout(
+    mapbox = list(style = "carto-positron", zoom = 8, center = list(lat = 40.73, lon = -73.93)),
+    title = "NYC American Restaurant Grades by Location"
+  )
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+## Chart B
+
+```{r, echo=FALSE}
+borough_summary <- rest_inspec |> 
+  group_by(boro) |> 
+  summarize(
+    avg_score = mean(score, na.rm = TRUE),
+    count = n(),
+    gradeA_pct = mean(grade == "A", na.rm = TRUE)
+  )
+
+plot_ly(
+  data = borough_summary,
+  x = ~boro,
+  y = ~avg_score,
+  type = "bar",
+  color = ~gradeA_pct,
+  colors = "magma",
+  text = ~paste("Grade A %:", round(gradeA_pct*100, 1), "%"),
+  hoverinfo = "text"
+) |> 
+  layout(
+    title = "Average Inspection Score and % with A Grade of American Restaurants by Borough",
+    xaxis = list(title = ""),
+    yaxis = list(title = "Average Score (Lower is Better)")
+  )
+```
+
+## Chart C
+
+```{r, echo=FALSE}
+nyc_trends <- rest_inspec |> 
+  mutate(date = as.Date(inspection_date)) |> 
+  group_by(month = lubridate::floor_date(date, "month")) |> 
+  summarize(mean_score = mean(score, na.rm = TRUE))
+
+plot_ly(
+  data = nyc_trends,
+  x = ~month,
+  y = ~mean_score,
+  type = "scatter",
+  mode = "lines+markers",
+  line = list(color = "steelblue")
+) |> 
+  layout(
+    title = "Average Inspection Scores Over Time of American Restaurants",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Mean Score (Lower is Better)")
+  )
+```

@@ -1,0 +1,5 @@
+---
+title: "A critique of data"
+output: html_document
+---
+

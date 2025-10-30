@@ -1,0 +1,10 @@
+---
+title: "Predictors of Particulate Matter Levels in New York City"
+output: html_document
+---
+
+Using OpenAQ's data on the levels of particulate matter with a diameter less than or equal to 2.5 (PM 2.5), I assess how well factors like temperature, humidity, and traffic counts predict the levels of PM 2.5. 
+
+You can check out the project [here](https://github.com/maya-rae/PM2.5_in_NYC_proj). Note that this is a work in progress.
+
+Here is an interactive [PM 2.5 monitoring system](https://mlzor9-maya-arnott.shinyapps.io/pm25_in_nyc_proj/) that I created to assess the change in PM 2.5 levels over the course of 24 hours.

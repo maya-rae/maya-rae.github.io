@@ -1,0 +1,13 @@
+---
+title: "Maya Arnott"
+output: html_document
+
+---
+
+I am a current Master's Student in Environmental Health Data Science at
+Columbia University. I am interested in data science, quantifying climate risk, and applying predictive models to healthcare challenges. Feel free to reach out if you'd like to collaborate on any projects or get to know me better.
+
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXg4emE3Z3JscTJjZmIwZmRpdjBwc29yODRhMzE1MzJzNmJ0bzhmbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1KVcrdl7rJpFnY2s/giphy.gif" width="400">
+</div>
+
