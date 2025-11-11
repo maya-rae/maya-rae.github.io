@@ -10,6 +10,8 @@ navbar:
           href: "dashboard.html"
         - text: "Air Pollution in NYC"
           href: "air_poll_nyc.html"
+        - text: "Access to Care in Chicago"
+          href: "gis_chicago.html"
     - text: "About"
       href: "about.html"
     - icon: fa-envelope fa-lg

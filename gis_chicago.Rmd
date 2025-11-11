@@ -1,0 +1,15 @@
+---
+title: "Access and Proximity to Healthcare Services in Chicago"
+
+output: html_document
+---
+
+This project assessed proximity and access to healthcare services in Chicago using large public health datasets obtained from the City of Chicago website and the United States Census Bureau. 
+
+<a href="docs/GIS_Maya_Arnott.pdf" target="_blank">View my project's slide deck</a>
+
+
+<a href="docs/Arnott_Final_Paper.pdf" target="_blank">View my project's paper</a>
+
+
+
