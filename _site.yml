@@ -6,11 +6,13 @@ navbar:
   right:
     - text: "Projects"
       menu:
+       - text: "Aviation Crash Analysis"
+          href: "aviation_crash_analysis.html"
         - text: "Plots for P8105"
           href: "dashboard.html"
         - text: "Air Pollution in NYC"
           href: "air_poll_nyc.html"
-        - text: "Access to Care in Chicago"
+        - text: "GIS Projects"
           href: "gis_chicago.html"
         - text: "Tableau Portfolio"
           href: "tableau.html"
