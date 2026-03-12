@@ -7,7 +7,7 @@ output:
 ---
 
 
-Explore interactive dashboards for homicides across U.S. cities and global earthquakes.
+Explore interactive dashboards I've made for homicides across U.S. cities and global earthquakes.
 
 ---
 
