@@ -3,11 +3,16 @@ title: "GIS Projects"
 
 output: html_document
 ---
-# Hurricane Sandy in the United States
-Here is a map of Hurricane Sandy's storm path trajectory in the United States and its associated cumulative hurricane-force sustained wind exposure by county.
+# Daytime Population Change in St. Louis, Missouri
 
-<a href="files/hurricane_sandy_2012.png" target="_blank">View my hurricane map</a>
 
+<a href="files/stlouis_daytime_change_top10.png" target="_blank">View my hurricane map</a>
+
+# U.S. Temperature Anomalies in the Month of July
+<a href="files/july_temp_anomalies.png" target="_blank">View my hurricane map</a>
+
+# Comparing DBSCAN and HDBSCAN
+<a href="files/HDBSCAN_vs_DBSCAN.png" target="_blank">View my hurricane map</a>
 
 # Access and Proximity to Healthcare Services in Chicago
 
