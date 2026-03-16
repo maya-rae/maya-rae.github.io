@@ -1,12 +1,12 @@
 name: "Maya Arnott"
-output_dir: 'docs'
+output_dir: "docs"
 
 navbar:
   title: "Home"
   right:
     - text: "Projects"
       menu:
-       - text: "Aviation Crash Analysis"
+        - text: "Aviation Crash Analysis"
           href: "aviation_crash_analysis.html"
         - text: "Plots for P8105"
           href: "dashboard.html"
