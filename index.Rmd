@@ -3,11 +3,21 @@ title: "Maya Arnott"
 output: html_document
 
 ---
+## About Me  
 
-I am interested in data science, quantifying climate risk, and applying predictive models to healthcare challenges. I am a current Master's Student in Environmental Health Data Science at Columbia University, and graduated with a BA in Environmental Biology from Washington University in St. Louis.
+I am interested in data science, quantifying climate risk, and applying predictive models to healthcare challenges. I am a current Master's Student in Environmental Health Data Science at Columbia University, and graduated with a BA in Environmental Biology from Washington University in St. Louis.  
 
+---
 
-Feel free to reach out if you'd like to collaborate on any projects or get to know me better. 
+## Key Skills  
 
+* **R** - tidyverse, leaflet, sf, raster/terra, r5r, stats, MASS, caret, tidymodels, shiny
+* **Python** - pandas, numpy, statsmodels, scipy.stats, matplotlib, geopandas, pyearth, scikit-learn
+* **Data Visualization & Interactive Dashboards** - ggplot2, tmap, Plotly, shiny
+* **GIS & Spatial Analysis ArcGIS** - QGIS, spatial data handling in R (sf, raster/terra) and Python (geopandas, rasterio)
+* **Statistical & Predictive Modeling** - regression, machine learning, MARS/Earth models, classification, clustering
 
+---
 
+## Contact
+Feel free to connect via [LinkedIn](https://www.linkedin.com/in/maya-arnott/), email me at marnott276@gmail.com, or explore my [GitHub](https://github.com/maya-rae/) projects.
