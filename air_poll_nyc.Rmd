@@ -5,6 +5,19 @@ output: html_document
 
 Using OpenAQ's data on the levels of particulate matter with a diameter less than or equal to 2.5 (PM 2.5), I assess how well factors like temperature, humidity, and traffic counts predict the levels of PM 2.5. 
 
-You can check out the project [here](https://github.com/maya-rae/PM2.5_in_NYC_proj). Note that this is a work in progress.
 
 Here is an interactive [PM 2.5 monitoring system](https://mlzor9-maya-arnott.shinyapps.io/pm25_in_nyc_proj/) that I created to assess the change in PM 2.5 levels over the course of 24 hours.
+
+<div style="text-align:center; margin: 20px 0;">
+  <iframe 
+    src="https://mlzor9-maya-arnott.shinyapps.io/pm25_in_nyc_proj/" 
+    width="100%" 
+    height="600px" 
+    style="border:1px solid #ccc; border-radius:8px;">
+  </iframe>
+  <p style="font-size:14px; color:#555; margin-top:6px;">
+    Interactive PM 2.5 monitoring dashboard for New York City
+  </p>
+</div>
+
+You can learn more about the project by checking out the [github page](https://github.com/maya-rae/PM2.5_in_NYC_proj). Note that this is a work in progress.

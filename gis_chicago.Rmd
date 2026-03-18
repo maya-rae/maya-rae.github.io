@@ -1,9 +1,9 @@
-
 ---
 title: "GIS Portfolio"
 output: 
   html_document:
-    theme: cosmo
+    toc: true           # generate a table of contents
+    toc_float: true     # make it float as a sidebar
 ---
 
 ## About This Portfolio  
