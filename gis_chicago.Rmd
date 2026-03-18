@@ -31,6 +31,18 @@ This project examines the spatial distribution of shootings in Chicago and evalu
 
 <img src="files/chicago_shootings_kde.png" style="width:100%; height:auto;">
 
+<img src="files/hbd_map.png" style="width:100%; height:auto;">
+
+<img src="files/raster_calc.png" style="width:100%; height:auto;">
+
+<img src="files/comm_access.png" style="width:100%; height:auto;">
+
+<img src="files/traveltime.png" style="width:100%; height:auto;">
+
+<img src="files/nineplot.png" style="width:100%; height:auto;">
+
+<img src="files/chicago_trauma_map.png" style="width:100%; height:auto;">
+
 # Daytime Population Change in St. Louis, Missouri
 
 ## Overview
