@@ -8,8 +8,8 @@ navbar:
       menu:
         - text: "Aviation Crash Analysis"
           href: "aviation_crash_analysis.html"
-        - text: "Plots for P8105"
-          href: "dashboard.html"
+        - text: "Cranial Traits Study"
+          href: "p8105_mtp.html"  
         - text: "Air Pollution in NYC"
           href: "air_poll_nyc.html"
         - text: "GIS Portfolio"
