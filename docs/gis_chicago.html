@@ -11,7 +11,7 @@
 
 
 
-<title>GIS Projects</title>
+<title>GIS Portfolio</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -301,27 +301,125 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">GIS Projects</h1>
+<h1 class="title toc-ignore">GIS Portfolio</h1>
 
 </div>
 
 
+<div id="gun-violence-access-to-trauma-care-in-chicago"
+class="section level1">
+<h1>Gun Violence &amp; Access to Trauma Care in Chicago</h1>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>This project examines the spatial distribution of shootings in
+Chicago and evaluates how access to Level I trauma centers aligns with
+population and violent incidents. Using point-level crime data, I
+applied spatial point pattern analysis (Ripley’s K, KDE, HDBSCAN) to
+identify clusters at street and neighborhood scales. Raster-based
+analyses combined population density with shooting intensity to model
+demand-weighted access to trauma care. The project identifies areas
+where violent incidents and population density are not well served by
+existing trauma centers. This project highlights opportunities to
+optimize emergency care allocation.</p>
+</div>
+<div id="methods-used" class="section level2">
+<h2>Methods used:</h2>
+<ul>
+<li>Ripley’s K function</li>
+<li>Kerndel density estimation</li>
+<li>HDBSCAN clustering</li>
+<li>Raster analyses</li>
+<li>Travel-time accessibility analysis</li>
+</ul>
+</div>
+<div id="tools-used" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>spatspat</li>
+<li>dbscan</li>
+<li>tmap/ggplot2</li>
+</ul>
+<p><img src="files/chicago_shootings_kde.png" style="width:100%; height:auto;"></p>
+</div>
+</div>
 <div id="daytime-population-change-in-st.-louis-missouri"
 class="section level1">
 <h1>Daytime Population Change in St. Louis, Missouri</h1>
+<div id="overview-1" class="section level2">
+<h2>Overview</h2>
+<p>This project analyzes daytime population change in St. Louis,
+Missouri to examine how population distribution shifts between nighttime
+residential patterns and daytime activity centers. Using global
+population rasters from LandScan Global, daytime and nighttime
+population counts were aggregated to neighborhood boundaries and used to
+calculate percent daytime population change. The resulting map
+highlights that the Downtown Central Business District and North Midtown
+neighborhood experience the greatest daytime population gain, reflecting
+employment centers and major activity hubs within the city.</p>
+</div>
+<div id="tools-used-1" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>tmap</li>
+</ul>
 <iframe src="files/stlouis_daytime_change_top10.png" width="100%" height="800px">
 </iframe>
+</div>
 </div>
 <div id="u.s.-temperature-anomalies-in-the-month-of-july"
 class="section level1">
 <h1>U.S. Temperature Anomalies in the Month of July</h1>
-<p><a href="files/july_temp_anomalies.png" target="_blank">View my
-hurricane map</a></p>
+<div id="overview-2" class="section level2">
+<h2>Overview</h2>
+<p>This map shows how July maximum temperatures have deviated from their
+long-term averages across the U.S. over the past 25 years. Using PRISM
+Climate data from Oregon State University, I created a faceted map of
+the U.S. over the past 25 years.</p>
+</div>
+<div id="tools-used-2" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>Prism Climate Data</li>
+</ul>
+<iframe src="files/july_temp_anomalies.png" width="100%" height="1000px">
+</iframe>
+</div>
 </div>
 <div id="comparing-dbscan-and-hdbscan" class="section level1">
 <h1>Comparing DBSCAN and HDBSCAN</h1>
-<p><a href="files/HDBSCAN_vs_DBSCAN.png" target="_blank">View my
-hurricane map</a></p>
+<div id="overview-3" class="section level2">
+<h2>Overview</h2>
+<p>This project examines the spatial structure of reported felony
+assaults in Lower Manhattan, New York City. Using point-level crime
+data, the analysis evaluates how incidents are distributed across the
+neighborhood and compares how different analytical methods — kernel
+density estimation (KDE), DBSCAN, and HDBSCAN clustering — characterize
+spatial concentration. The data from NYC Open Crime Data was filtered to
+include felony assaults occurring between 2022 and 2025. The resulting
+maps highlight areas of high crime density and illustrate how parameter
+choices influence the detection of clusters and noise, providing insight
+into the local geographic patterns of felony assaults.</p>
+</div>
+<div id="tools-used-3" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>spatstat</li>
+<li>KDE, DBSCAN, &amp; HDBSCAN</li>
+<li>ggplot2</li>
+</ul>
+<p><img src="files/HDBSCAN_vs_DBSCAN.png" style="width:100%; height:auto;"></p>
+</div>
 </div>
 <div id="access-and-proximity-to-healthcare-services-in-chicago"
 class="section level1">
@@ -337,8 +435,8 @@ project’s paper</a></p>
 <div id="recommendations-for-mammal-conservation-in-africa"
 class="section level1">
 <h1>Recommendations for Mammal Conservation in Africa</h1>
-<p><a href="files/Arnott-Map.pdf" target="_blank">View my map
-here</a></p>
+<iframe src="files/Arnott-Map.pdf" width="100%" height="800px">
+</iframe>
 </div>
 
 
