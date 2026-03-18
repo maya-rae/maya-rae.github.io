@@ -3,16 +3,86 @@ title: "GIS Projects"
 
 output: html_document
 ---
+
+---
+title: "GIS Portfolio"
+output: html_document
+---
+
+# Gun Violence & Access to Trauma Care in Chicago
+
+## Overview
+This project examines the spatial distribution of shootings in Chicago and evaluates how access to Level I trauma centers aligns with population and violent incidents. Using point-level crime data, I applied spatial point pattern analysis (Ripley’s K, KDE, HDBSCAN) to identify clusters at street and neighborhood scales. Raster-based analyses combined population density with shooting intensity to model demand-weighted access to trauma care. The project identifies areas where violent incidents and population density are not well served by existing trauma centers. This project highlights opportunities to optimize emergency care allocation.
+
+## Methods used:
+- Ripley's K function
+- Kerndel density estimation
+- HDBSCAN clustering
+- Raster analyses
+- Travel-time accessibility analysis
+
+## Tools used:
+- R
+- sf
+- terra
+- spatspat
+- dbscan
+- tmap/ggplot2
+
+<iframe src="files/chicago_shootings_kde.png" width="100%" height="800px"></iframe>
+
+<iframe src="files/hbd_map.png" width="100%" height="800px"></iframe>
+
+<iframe src="files/raster_calc.png" width="100%" height="800px"></iframe>
+
+<iframe src="files/comm_access.png" width="100%" height="800px"></iframe>
+
+<iframe src="files/traveltime.png" width="100%" height="800px"></iframe>
+
+<iframe src="files/EDITHERE!.png" width="100%" height="800px"></iframe>
+
 # Daytime Population Change in St. Louis, Missouri
 
+## Overview
 
-<a href="files/stlouis_daytime_change_top10.png" target="_blank">View my hurricane map</a>
+This project analyzes daytime population change in St. Louis, Missouri to examine how population distribution shifts between nighttime residential patterns and daytime activity centers. Using global population rasters from LandScan Global, daytime and nighttime population counts were aggregated to neighborhood boundaries and used to calculate percent daytime population change. The resulting map highlights that the Downtown Central Business District and North Midtown neighborhood experience the greatest daytime population gain, reflecting employment centers and major activity hubs within the city.
+
+## Tools used:
+- R
+- sf
+- terra
+- tmap
+
+<iframe src="files/stlouis_daytime_change_top10.png" width="100%" height="800px"></iframe>
+
 
 # U.S. Temperature Anomalies in the Month of July
-<a href="files/july_temp_anomalies.png" target="_blank">View my hurricane map</a>
+
+## Overview
+This map shows how July maximum temperatures have deviated from their long-term averages across the U.S. over the past 25 years. Using PRISM Climate data from Oregon State University, I created a faceted map of the U.S. over the past 25 years. 
+
+## Tools used:  
+- R
+- sf
+- terra
+- Prism Climate Data
+
+<iframe src="files/july_temp_anomalies.png" width="100%" height="800px"></iframe>
 
 # Comparing DBSCAN and HDBSCAN
-<a href="files/HDBSCAN_vs_DBSCAN.png" target="_blank">View my hurricane map</a>
+
+## Overview
+This project examines the spatial structure of reported felony assaults in Lower Manhattan, New York City. Using point-level crime data, the analysis evaluates how incidents are distributed across the neighborhood and compares how different analytical methods — kernel density estimation (KDE), DBSCAN, and HDBSCAN clustering — characterize spatial concentration. The data from NYC Open Crime Data was filtered to include felony assaults occurring between 2022 and 2025. The resulting maps highlight areas of high crime density and illustrate how parameter choices influence the detection of clusters and noise, providing insight into the local geographic patterns of felony assaults.
+
+## Tools used:
+- R
+- sf
+- spatstat
+- KDE, DBSCAN, & HDBSCAN
+- ggplot2
+  
+  
+<iframe src="files/HDBSCAN_vs_DBSCAN.png" width="100%" height="800px"></iframe>
 
 # Access and Proximity to Healthcare Services in Chicago
 
@@ -24,4 +94,5 @@ This project assessed proximity and access to healthcare services in Chicago usi
 
 # Recommendations for Mammal Conservation in Africa
 
-<a href="files/Arnott-Map.pdf" target="_blank">View my map here</a>
+
+<iframe src="files/Arnott-Map.pdf" width="100%" height="800px"></iframe>
