@@ -306,11 +306,18 @@ $(document).ready(function () {
 </div>
 
 
-<div id="gun-violence-access-to-trauma-care-in-chicago"
-class="section level1">
-<h1>Gun Violence &amp; Access to Trauma Care in Chicago</h1>
-<div id="overview" class="section level2">
-<h2>Overview</h2>
+<div id="about-this-portfolio" class="section level2">
+<h2>About This Portfolio</h2>
+<p>This page showcases my GIS and spatial analysis projects using R,
+focusing on spatial epidemiology, accessibility modeling, and geospatial
+data science.</p>
+<hr />
+</div>
+<div id="gun-violence-access-to-trauma-care-chicago"
+class="section level2">
+<h2>🏥 Gun Violence &amp; Access to Trauma Care — Chicago</h2>
+<div id="overview" class="section level3">
+<h3>Overview</h3>
 <p>This project examines the spatial distribution of shootings in
 Chicago and evaluates how access to Level I trauma centers aligns with
 population and violent incidents. Using point-level crime data, I
@@ -322,84 +329,76 @@ where violent incidents and population density are not well served by
 existing trauma centers. This project highlights opportunities to
 optimize emergency care allocation.</p>
 </div>
-<div id="methods-used" class="section level2">
-<h2>Methods used:</h2>
+<div id="methods-used" class="section level3">
+<h3>Methods used:</h3>
 <ul>
 <li>Ripley’s K function</li>
-<li>Kerndel density estimation</li>
+<li>Kernel density estimation</li>
 <li>HDBSCAN clustering</li>
 <li>Raster analyses</li>
 <li>Travel-time accessibility analysis</li>
 </ul>
 </div>
-<div id="tools-used" class="section level2">
-<h2>Tools used:</h2>
+<div id="tools-used" class="section level3">
+<h3>Tools used:</h3>
 <ul>
 <li>R</li>
 <li>sf</li>
 <li>terra</li>
-<li>spatspat</li>
+<li>spatstat</li>
 <li>dbscan</li>
 <li>tmap/ggplot2</li>
 </ul>
-<p><img src="files/chicago_shootings_kde.png" style="width:100%; height:auto;"></p>
-<p><img src="files/hbd_map.png" style="width:100%; height:auto;"></p>
-<p><img src="files/raster_calc.png" style="width:100%; height:auto;"></p>
-<p><img src="files/comm_access.png" style="width:100%; height:auto;"></p>
-<p><img src="files/traveltime.png" style="width:100%; height:auto;"></p>
-<p><img src="files/chicago_trauma_map.png" style="width:100%; height:auto;"></p>
+<hr />
+</div>
+<div id="spatial-patterns-of-gun-violence" class="section level3">
+<h3>Spatial Patterns of Gun Violence</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/chicago_shootings_kde.png" style="width:100%;">
+  <img src="files/hbd_map.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Kernel density estimate of shooting intensity. Right: HDBSCAN
+clustering of shooting incidents.
+</p>
+<hr />
+</div>
+<div id="raster-accessibility-analysis" class="section level3">
+<h3>Raster &amp; Accessibility Analysis</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/raster_calc.png" style="width:100%;">
+  <img src="files/comm_access.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Combined raster of population and shooting density. Right:
+Community-level accessibility patterns.
+</p>
+<hr />
+</div>
+<div id="travel-time-to-trauma-centers" class="section level3">
+<h3>Travel Time to Trauma Centers</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/traveltime.png" style="width:100%;">
+  <img src="files/nineplot.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Continuous travel time surface. Right: Areas within 10-minute
+access to Level I trauma centers.
+</p>
+<hr />
+</div>
+<div id="trauma-center-locations" class="section level3">
+<h3>Trauma Center Locations</h3>
+<p><img src="files/chicago_trauma_map.png" style="width:100%;"></p>
+<p style="text-align:center; font-size:14px;">
+Locations of Level I trauma centers across Chicago.
+</p>
 </div>
 </div>
-<div id="daytime-population-change-in-st.-louis-missouri"
+<div id="identifying-hotspots-dbscan-vs.-hdbscan"
 class="section level1">
-<h1>Daytime Population Change in St. Louis, Missouri</h1>
+<h1>📍 Identifying Hotspots: DBSCAN vs. HDBSCAN</h1>
 <div id="overview-1" class="section level2">
-<h2>Overview</h2>
-<p>This project analyzes daytime population change in St. Louis,
-Missouri to examine how population distribution shifts between nighttime
-residential patterns and daytime activity centers. Using global
-population rasters from LandScan Global, daytime and nighttime
-population counts were aggregated to neighborhood boundaries and used to
-calculate percent daytime population change. The resulting map
-highlights that the Downtown Central Business District and North Midtown
-neighborhood experience the greatest daytime population gain, reflecting
-employment centers and major activity hubs within the city.</p>
-</div>
-<div id="tools-used-1" class="section level2">
-<h2>Tools used:</h2>
-<ul>
-<li>R</li>
-<li>sf</li>
-<li>terra</li>
-<li>tmap</li>
-</ul>
-<p><img src="files/stlouis_daytime_change_top10.png" style="width:100%; height:auto;"></p>
-</div>
-</div>
-<div id="u.s.-temperature-anomalies-in-the-month-of-july"
-class="section level1">
-<h1>U.S. Temperature Anomalies in the Month of July</h1>
-<div id="overview-2" class="section level2">
-<h2>Overview</h2>
-<p>This map shows how July maximum temperatures have deviated from their
-long-term averages across the U.S. over the past 25 years. Using PRISM
-Climate data from Oregon State University, I created a faceted map of
-the U.S. over the past 25 years.</p>
-</div>
-<div id="tools-used-2" class="section level2">
-<h2>Tools used:</h2>
-<ul>
-<li>R</li>
-<li>sf</li>
-<li>terra</li>
-<li>Prism Climate Data</li>
-</ul>
-<p><img src="files/july_temp_anomalies.png" style="width:100%; height:auto;"></p>
-</div>
-</div>
-<div id="comparing-dbscan-and-hdbscan" class="section level1">
-<h1>Comparing DBSCAN and HDBSCAN</h1>
-<div id="overview-3" class="section level2">
 <h2>Overview</h2>
 <p>This project examines the spatial structure of reported felony
 assaults in Lower Manhattan, New York City. Using point-level crime
@@ -412,7 +411,7 @@ maps highlight areas of high crime density and illustrate how parameter
 choices influence the detection of clusters and noise, providing insight
 into the local geographic patterns of felony assaults.</p>
 </div>
-<div id="tools-used-3" class="section level2">
+<div id="tools-used-1" class="section level2">
 <h2>Tools used:</h2>
 <ul>
 <li>R</li>
@@ -421,23 +420,63 @@ into the local geographic patterns of felony assaults.</p>
 <li>KDE, DBSCAN, &amp; HDBSCAN</li>
 <li>ggplot2</li>
 </ul>
-<p><img src="files/HDBSCAN_vs_DBSCAN.png" style="width:100%; height:auto;"></p>
+</div>
+<div id="section" class="section level2">
+<h2><img src="files/HDBSCAN_vs_DBSCAN.png" style="width:100%; height:auto;"></h2>
 </div>
 </div>
-<div id="access-and-proximity-to-healthcare-services-in-chicago"
+<div id="daytime-population-change-st.-louis" class="section level1">
+<h1>🌆 Daytime Population Change — St. Louis</h1>
+<div id="overview-2" class="section level2">
+<h2>Overview</h2>
+<p>This project analyzes daytime population change in St. Louis,
+Missouri to examine how population distribution shifts between nighttime
+residential patterns and daytime activity centers. Using global
+population rasters from LandScan Global, daytime and nighttime
+population counts were aggregated to neighborhood boundaries and used to
+calculate percent daytime population change. The resulting map
+highlights that the Downtown Central Business District and North Midtown
+neighborhood experience the greatest daytime population gain, reflecting
+employment centers and major activity hubs within the city.</p>
+</div>
+<div id="tools-used-2" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>tmap</li>
+</ul>
+</div>
+<div id="section-1" class="section level2">
+<h2><img src="files/stlouis_daytime_change_top10.png" style="width:100%; height:auto;"></h2>
+</div>
+</div>
+<div id="u.s.-temperature-anomalies" class="section level1">
+<h1>🌡 U.S. Temperature Anomalies</h1>
+<div id="overview-3" class="section level2">
+<h2>Overview</h2>
+<p>This map shows how July maximum temperatures have deviated from their
+long-term averages across the U.S. over the past 25 years. Using PRISM
+Climate data from Oregon State University, I created a faceted map of
+the U.S. over the past 25 years.</p>
+</div>
+<div id="tools-used-3" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>PRISM Climate Data</li>
+</ul>
+</div>
+<div id="section-2" class="section level2">
+<h2><img src="files/july_temp_anomalies.png" style="width:100%; height:auto;"></h2>
+</div>
+</div>
+<div id="recommendations-for-mammal-conservation-africa"
 class="section level1">
-<h1>Access and Proximity to Healthcare Services in Chicago</h1>
-<p>This project assessed proximity and access to healthcare services in
-Chicago using large public health datasets obtained from the City of
-Chicago website and the United States Census Bureau.</p>
-<p><a href="files/AppsinGIS_slides.pdf" target="_blank">View my
-project’s slide deck with maps</a></p>
-<p><a href="files/AppsinGIS_Arnott.pdf" target="_blank">View my
-project’s paper</a></p>
-</div>
-<div id="recommendations-for-mammal-conservation-in-africa"
-class="section level1">
-<h1>Recommendations for Mammal Conservation in Africa</h1>
+<h1>🐆 Recommendations for Mammal Conservation — Africa</h1>
 <iframe src="files/Arnott-Map.pdf" width="100%" height="800px">
 </iframe>
 </div>

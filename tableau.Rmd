@@ -6,19 +6,16 @@ output:
     toc_float: true
 ---
 
+## Interactive Dashboards  
 
-Explore interactive dashboards I've made for homicides across U.S. cities and global earthquakes.
-
+Explore my Tableau dashboards analyzing global events and urban crime patterns.
 ---
-
-
-## Earthquakes Across the World (1900-2014)
-
+## 🌍 Earthquakes Across the World (1900-2014)
 
 <div class='tableauPlaceholder' id='viz1763407100381' style='position: relative'>
   <noscript>
     <a href='#'>
-      <img alt='Earthquakes Across the World1900 to 2014 ' src='https://public.tableau.com/static/images/HW/HWZZFMYM8/1_rss.png' style='border: none' />
+      <img alt='Earthquakes Across the World 1900-2014' src='https://public.tableau.com/static/images/HW/HWZZFMYM8/1_rss.png' style='border: none;' />
     </a>
   </noscript>
   <object class='tableauViz' style='display:none;'>
@@ -35,11 +32,16 @@ Explore interactive dashboards I've made for homicides across U.S. cities and gl
     <param name='language' value='en-US' />
   </object>
 </div>
+<p style="text-align:center; font-size:14px;">Interactive map showing earthquakes worldwide from 1900–2014.</p>
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1763407100381');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width='100%';
-  vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  function resizeViz1(){
+    vizElement.style.width = divElement.offsetWidth + 'px';
+    vizElement.style.height = Math.max(divElement.offsetWidth*0.85, 700) + 'px';
+  }
+  resizeViz1();
+  window.addEventListener('resize', resizeViz1);
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -47,12 +49,12 @@ Explore interactive dashboards I've made for homicides across U.S. cities and gl
 
 ---
 
-## Earthquake Depth and Magnitude (1900-2014)
+## 💥 Earthquake Depth and Magnitude (1900-2014)
 
 <div class='tableauPlaceholder' id='viz1763407484262' style='position: relative'>
   <noscript>
     <a href='#'>
-      <img alt='Density & Magnitude ' src='https://public.tableau.com/static/images/Ea/Earthquake_Magnitudes_MRA/DensityMagnitude/1_rss.png' style='border: none' />
+      <img alt='Earthquake Depth & Magnitude' src='https://public.tableau.com/static/images/Ea/Earthquake_Magnitudes_MRA/DensityMagnitude/1_rss.png' style='border: none;' />
     </a>
   </noscript>
   <object class='tableauViz' style='display:none;'>
@@ -71,12 +73,16 @@ Explore interactive dashboards I've made for homicides across U.S. cities and gl
     <param name='language' value='en-US' />
   </object>
 </div>
+<p style="text-align:center; font-size:14px;">Interactive map showing earthquake depth and magnitude from 1900–2014. Legends are fully visible.</p>
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1763407484262');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='920px';vizElement.style.maxWidth='1220px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-  else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='920px';vizElement.style.maxWidth='1220px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-  else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+  function resizeViz2(){
+    vizElement.style.width = divElement.offsetWidth + 'px';
+    vizElement.style.height = Math.max(divElement.offsetWidth*0.85, 750) + 'px';
+  }
+  resizeViz2();
+  window.addEventListener('resize', resizeViz2);
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -86,12 +92,10 @@ Explore interactive dashboards I've made for homicides across U.S. cities and gl
 
 ## Top Cities by Homicides (2007-2017)
 
-Below is an interactive Tableau dashboard showing the number of homicides in cities across the United States.
-
 <div class='tableauPlaceholder' id='viz1763406613624' style='position: relative'>
   <noscript>
     <a href='#'>
-      <img alt='Dashboard ' src='https://public.tableau.com/static/images/Ho/HomicideCountsinCitiesAcrosstheUS/Dashboard/1_rss.png' style='border: none' />
+      <img alt='Top Cities by Homicides' src='https://public.tableau.com/static/images/Ho/HomicideCountsinCitiesAcrosstheUS/Dashboard/1_rss.png' style='border: none;' />
     </a>
   </noscript>
   <object class='tableauViz' style='display:none;'>
@@ -111,14 +115,19 @@ Below is an interactive Tableau dashboard showing the number of homicides in cit
     <param name='filter' value='publish=yes' />
   </object>
 </div>
+<p style="text-align:center; font-size:14px;">Interactive dashboard showing homicides across top U.S. cities (2007–2017).</p>
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1763406613624');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  if ( divElement.offsetWidth > 800 ) { vizElement.style.width='920px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-  else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='920px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-  else { vizElement.style.width='100%';vizElement.style.height='827px';}                     
+  function resizeViz3(){
+    vizElement.style.width = divElement.offsetWidth + 'px';
+    vizElement.style.height = Math.max(divElement.offsetWidth*0.85, 700) + 'px';
+  }
+  resizeViz3();
+  window.addEventListener('resize', resizeViz3);
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 
+---
