@@ -5,16 +5,20 @@ output: html_document
 ---
 ## About Me  
 
-I am interested in data science, quantifying climate risk, and applying predictive models to healthcare challenges. I am a current Master's Student in Environmental Health Data Science at Columbia University, and graduated with a BA in Environmental Biology from Washington University in St. Louis.  
+I am a current Master's Student in Environmental Health Data Science at Columbia University, and graduated with a BA in Environmental Biology from Washington University in St. Louis. I am interested in data science, climate risk quantification, and applying spatial and statistical methods to environmental health and healthcare research.   
 
 ---
+
+## Thesis (In Progress): Prostate Cancer & Environmental Chemical Exposures
+My thesis investigates the associations between environmental chemical exposures and prostate cancer diagnosis and aggressiveness using high-dimensional epidemiological data. The analysis applies GWAS-style regression across hundreds of chemical exposure variables, with covariate adjustment for key demographic and clinical factors.
 
 ## Key Skills  
 
 * **R** - tidyverse, leaflet, sf, raster/terra, r5r, stats, MASS, caret, tidymodels, shiny
 * **Python** - pandas, numpy, statsmodels, scipy.stats, matplotlib, geopandas, pyearth, scikit-learn
+* **SQL** - querying and data extraction  
 * **Data Visualization & Interactive Dashboards** - ggplot2, tmap, Plotly, shiny
-* **GIS & Spatial Analysis ArcGIS** - QGIS, spatial data handling in R (sf, raster/terra) and Python (geopandas, rasterio)
+* **GIS & Spatial Analysis**  - ArcGIS, QGIS, spatial data handling in R (sf, raster/terra) and Python (geopandas, rasterio)
 * **Statistical & Predictive Modeling** - regression, machine learning, MARS/Earth models, classification, clustering
 
 ---
