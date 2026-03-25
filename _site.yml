@@ -22,10 +22,10 @@ navbar:
       href: "mailto:mra2209@cumc.columbia.edu"
     - icon: fa-github fa-lg
       href: "https://github.com/maya-rae/"
-      target: _blank
+      target: "_blank"
     - icon: fa-linkedin fa-lg
       href: "https://www.linkedin.com/in/maya-arnott/"
-      target: _blank
+      target: "_blank"
 
 output:
   html_document:
