@@ -7,7 +7,7 @@ navbar:
     - text: "Projects"
       menu:
         - text: "Texas Flood Exposure Analysis"
-          href: "texas_flood_analysis.qmd"
+          href: "texas_flood_analysis.html"
         - text: "Aviation Crash Analysis"
           href: "aviation_crash_analysis.html"
         - text: "GIS Portfolio"

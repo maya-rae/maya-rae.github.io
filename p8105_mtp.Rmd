@@ -20,7 +20,7 @@ Shahar and Sayer's paper examined 1,200 lateral cervical radiographs of people a
 ```{r}
 # importing the dataset and doing initial tidying
 exo_df = (
-  read_excel("data/p8105_mtp_data.xlsx", sheet = "this one", skip = 8) |>  
+  read_excel("docs/p8105_mtp_data.xlsx", sheet = "this one", skip = 8) |>  
     janitor::clean_names() |> 
     rename(
       eop_size_category = eop_size
