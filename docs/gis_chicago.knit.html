@@ -11,7 +11,7 @@
 
 
 
-<title>✈️ Aviation Crash Data Analysis</title>
+<title>GIS Portfolio</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -35,8 +35,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -331,7 +329,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="texas_flood_analysis.html">Texas Flood Exposure Analysis</a>
+      <a href="texas_flood_analysis.qmd">Texas Flood Exposure Analysis</a>
     </li>
     <li>
       <a href="aviation_crash_analysis.html">Aviation Crash Analysis</a>
@@ -380,58 +378,184 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">✈️ Aviation Crash Data Analysis</h1>
+<h1 class="title toc-ignore">GIS Portfolio</h1>
 
 </div>
 
 
-<p>The project’s aim is to understand the temporal context of aviation
-crash risk and understand patterns across aircraft, operators, and
-seasons.</p>
-<div style="display:flex; justify-content:center; gap:30px; flex-wrap:nowrap; margin: 20px 0;">
-
-  <!-- First Image + Caption -->
-  <div style="text-align:center; width:65%;">
-    <img src="images/website_screenshot1.png" style="width:100%; display:block; margin:auto;" />
-    <p style="font-size:14px; color:#555; margin-top:6px;">Interactive Aviation Crash Dashboard </p>
-  </div>
-  
-  <!-- Second Image + Caption -->
-  <div style="text-align:center; width:65%;">
-    <img src="images/website_screenshot2.png" style="width:100%; display:block; margin:auto;" />
-    <p style="font-size:14px; color:#555; margin-top:6px;">Aviation Crash Visualization</p>
-  </div>
-
+<div id="about-this-portfolio" class="section level2">
+<h2>About This Portfolio</h2>
+<p>This page showcases my GIS and spatial analysis projects using R,
+focusing on spatial epidemiology, accessibility modeling, and geospatial
+data science.</p>
+<hr />
 </div>
-<hr />
-<p><a href="https://maya-rae.github.io/airplanedata.github.io/index.html" target="_blank">View
-the project’s website here</a></p>
-<p><a href="https://github.com/maya-rae/airplanedata.github.io" target="_blank">Learn
-more about the project by visiting the github page</a></p>
-<hr />
-<div id="project-overview" class="section level2">
-<h2>Project Overview</h2>
-<p>This analysis explores aviation crash risk using historical crash
-data.<br />
-The key objectives are to</p>
+<div id="gun-violence-access-to-trauma-care-chicago"
+class="section level2">
+<h2>🏥 Gun Violence &amp; Access to Trauma Care — Chicago</h2>
+<div id="overview" class="section level3">
+<h3>Overview</h3>
+<p>This project examines the spatial distribution of shootings in
+Chicago and evaluates how access to Level I trauma centers aligns with
+population and violent incidents. Using point-level crime data, I
+applied spatial point pattern analysis (Ripley’s K, KDE, HDBSCAN) to
+identify clusters at street and neighborhood scales. Raster-based
+analyses combined population density with shooting intensity to model
+demand-weighted access to trauma care. The project identifies areas
+where violent incidents and population density are not well served by
+existing trauma centers. This project highlights opportunities to
+optimize emergency care allocation.</p>
+</div>
+<div id="methods-used" class="section level3">
+<h3>Methods used:</h3>
 <ul>
-<li>Understand temporal trends in aviation accidents</li>
-<li>Identify risk patterns across aircraft types and operators<br />
-</li>
-<li>Examine seasonal and geographic patterns</li>
+<li>Ripley’s K function</li>
+<li>Kernel density estimation</li>
+<li>HDBSCAN clustering</li>
+<li>Raster analyses</li>
+<li>Travel-time accessibility analysis</li>
 </ul>
 </div>
-<div id="highlights" class="section level2">
-<h2>Highlights</h2>
+<div id="tools-used" class="section level3">
+<h3>Tools used:</h3>
 <ul>
-<li>Interactive dashboards to explore crash risk over time<br />
-</li>
-<li>ANOVA and regression analyses to test factors affecting
-crashes<br />
-</li>
-<li>Clean visualizations for easier interpretation</li>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>spatstat</li>
+<li>dbscan</li>
+<li>tmap/ggplot2</li>
 </ul>
 <hr />
+</div>
+<div id="spatial-patterns-of-gun-violence" class="section level3">
+<h3>Spatial Patterns of Gun Violence</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/chicago_shootings_kde.png" style="width:100%;">
+  <img src="files/hbd_map.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Kernel density estimate of shooting intensity. Right: HDBSCAN
+clustering of shooting incidents.
+</p>
+<hr />
+</div>
+<div id="raster-accessibility-analysis" class="section level3">
+<h3>Raster &amp; Accessibility Analysis</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/raster_calc.png" style="width:100%;">
+  <img src="files/comm_access.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Combined raster of population and shooting density. Right:
+Community-level accessibility patterns.
+</p>
+<hr />
+</div>
+<div id="travel-time-to-trauma-centers" class="section level3">
+<h3>Travel Time to Trauma Centers</h3>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+  <img src="files/traveltime.png" style="width:100%;">
+  <img src="files/nineplot.png" style="width:100%;">
+</div>
+<p style="text-align:center; font-size:14px;">
+Left: Continuous travel time surface. Right: Areas within 10-minute
+access to Level I trauma centers.
+</p>
+<hr />
+</div>
+<div id="trauma-center-locations" class="section level3">
+<h3>Trauma Center Locations</h3>
+<p><img src="files/chicago_trauma_map.png" style="width:100%;"></p>
+<p style="text-align:center; font-size:14px;">
+Locations of Level I trauma centers across Chicago.
+</p>
+</div>
+</div>
+<div id="identifying-hotspots-dbscan-vs.-hdbscan"
+class="section level1">
+<h1>📍 Identifying Hotspots: DBSCAN vs. HDBSCAN</h1>
+<div id="overview-1" class="section level2">
+<h2>Overview</h2>
+<p>This project examines the spatial structure of reported felony
+assaults in Lower Manhattan, New York City. Using point-level crime
+data, the analysis evaluates how incidents are distributed across the
+neighborhood and compares how different analytical methods — kernel
+density estimation (KDE), DBSCAN, and HDBSCAN clustering — characterize
+spatial concentration. The data from NYC Open Crime Data was filtered to
+include felony assaults occurring between 2022 and 2025. The resulting
+maps highlight areas of high crime density and illustrate how parameter
+choices influence the detection of clusters and noise, providing insight
+into the local geographic patterns of felony assaults.</p>
+</div>
+<div id="tools-used-1" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>spatstat</li>
+<li>KDE, DBSCAN, &amp; HDBSCAN</li>
+<li>ggplot2</li>
+</ul>
+</div>
+<div id="section" class="section level2">
+<h2><img src="files/HDBSCAN_vs_DBSCAN.png" style="width:100%; height:auto;"></h2>
+</div>
+</div>
+<div id="daytime-population-change-st.-louis" class="section level1">
+<h1>🌆 Daytime Population Change — St. Louis</h1>
+<div id="overview-2" class="section level2">
+<h2>Overview</h2>
+<p>This project analyzes daytime population change in St. Louis,
+Missouri to examine how population distribution shifts between nighttime
+residential patterns and daytime activity centers. Using global
+population rasters from LandScan Global, daytime and nighttime
+population counts were aggregated to neighborhood boundaries and used to
+calculate percent daytime population change. The resulting map
+highlights that the Downtown Central Business District and North Midtown
+neighborhood experience the greatest daytime population gain, reflecting
+employment centers and major activity hubs within the city.</p>
+</div>
+<div id="tools-used-2" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>tmap</li>
+</ul>
+</div>
+<div id="section-1" class="section level2">
+<h2><img src="files/stlouis_daytime_change_top10.png" style="width:100%; height:auto;"></h2>
+</div>
+</div>
+<div id="u.s.-temperature-anomalies" class="section level1">
+<h1>🌡 U.S. Temperature Anomalies</h1>
+<div id="overview-3" class="section level2">
+<h2>Overview</h2>
+<p>This map shows how July maximum temperatures have deviated from their
+long-term averages across the U.S. over the past 25 years. Using PRISM
+Climate data from Oregon State University, I created a faceted map of
+the U.S. over the past 25 years.</p>
+</div>
+<div id="tools-used-3" class="section level2">
+<h2>Tools used:</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>terra</li>
+<li>PRISM Climate Data</li>
+</ul>
+</div>
+<div id="section-2" class="section level2">
+<h2><img src="files/july_temp_anomalies.png" style="width:100%; height:auto;"></h2>
+</div>
+</div>
+<div id="recommendations-for-mammal-conservation-africa"
+class="section level1">
+<h1>🐆 Recommendations for Mammal Conservation — Africa</h1>
+<iframe src="files/Arnott-Map.pdf" width="100%" height="800px">
+</iframe>
 </div>
 
 
@@ -483,7 +607,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
