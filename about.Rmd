@@ -8,7 +8,7 @@ editor_options:
 
 Get to know a little more about me through my resume.
 
-<iframe src="files/Maya_Arnott_Resume.pdf" width="100%" height="800px"></iframe>
+<iframe src="files/Maya_Arnott_2026.pdf" width="100%" height="800px"></iframe>
 
 
 
