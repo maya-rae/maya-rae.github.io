@@ -12,7 +12,7 @@ I am a current Master's Student in Environmental Health Data Science at Columbia
 ## Thesis (In Progress): Prostate Cancer & Environmental Chemical Exposures
 ### with Dr. Haotian Wu at Columbia University
 
-My thesis investigates the associations between environmental chemical exposures and prostate cancer diagnosis and aggressiveness using high-dimensional epidemiological data. The analysis applies GWAS-style regression across 500,000 chemical features, with covariate adjustment for key demographic and clinical factors.
+My thesis investigates the associations between environmental chemical exposures and prostate cancer diagnosis and aggressiveness using high-dimensional epidemiological data. The analysis applies GWAS-style regression across 10,000+ chemical features, with covariate adjustment for key demographic and clinical factors.
 
 This project uses high-dimensional data analysis, regression modeling, principal component analysis, multiple testing correction, and mixture methods.
 
