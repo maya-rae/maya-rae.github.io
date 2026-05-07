@@ -14,8 +14,6 @@ navbar:
           href: "P9380_Presentation_MArnott.pdf"
         - text: "GIS Portfolio"
           href: "gis_chicago.html"          
-        - text: "Cranial Traits Study"
-          href: "p8105_mtp.html"  
         - text: "Air Pollution in NYC"
           href: "air_poll_nyc.html"
         - text: "Tableau Portfolio"
