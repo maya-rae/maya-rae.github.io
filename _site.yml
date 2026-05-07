@@ -8,6 +8,8 @@ navbar:
       menu:
         - text: "Texas Flood Exposure Analysis"
           href: "texas_flood_analysis.html"
+        - text: "Hypertension Prediction Model"
+          href: "dietary-patterns.html"
         - text: "Aviation Crash Analysis"
           href: "aviation_crash_analysis.html"
         - text: "GIS Portfolio"
