@@ -10,6 +10,7 @@ I am a data scientist and recent Columbia University M.S. graduate in Environmen
 My work applies time-to-event and regression methods to real world health data, including an open source R package for survival analysis on high-dimensional datasets and a thesis analyzing environmental exposures and prostate cancer severity. I'm looking to bring my methodological background into a real-world evidence role, deriving insights from EHR, claims, and clinical data to inform treatment decisions.
 
 ---
+
 ## ExpoMet: an R package for exposome- and metabolome-wide association studies
 
 Expomet is freely available on Github (https://github.com/haotianwu17/ExpoMet) and will be added to CRAN shortly. The package vignette can be found under the project tab.
