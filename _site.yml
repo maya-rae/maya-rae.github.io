@@ -6,6 +6,8 @@ navbar:
   right:
     - text: "Projects"
       menu:
+        - text: "Open source R package vignette"
+          href: "expomet_vignette.html"
         - text: "Texas Flood Exposure Analysis"
           href: "texas_flood_analysis.html"
         - text: "Hypertension Prediction Model"
